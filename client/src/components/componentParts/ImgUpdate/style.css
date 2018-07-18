@@ -1,0 +1,8 @@
+.saveBtn {
+  float:left;
+  margin: 5px;
+}
+
+.inlineBlk {
+  display: inline-block;
+}

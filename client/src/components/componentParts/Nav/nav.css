@@ -1,0 +1,22 @@
+ul {
+  list-style-type: none;
+  float: left;
+}
+
+.cat-nav {
+  border-bottom: 3px black solid;
+  display: inline-block;
+  position: inherit;
+  background-color: rgba(0, 0, 0, .3);
+  color: rgba(0, 0, 0, .8);
+}
+
+.topnav {
+  display:block;
+  height: 30px;
+}
+
+.navlist:hover {
+  color: white;
+  cursor: pointer;
+}

@@ -1,0 +1,78 @@
+.spdFormContainer {
+  width:830px;
+  height:100%;
+  margin:auto;
+}
+.spdFormInnerContainer {
+  width:800px;
+  height:100%;
+  display:inline-block;
+  margin:auto;
+  box-shadow: 3px 3px 3px 3px gray;
+}
+
+.img_div {
+  width: 90%;
+  padding: 10px;
+}
+
+.img_size {
+  width: 150px;
+  height: 150px;
+  margin: 0 50%;
+}
+
+.input_box {
+  width:250px;
+  display: inline-block;
+  margin: 5px;
+  padding: 5px;
+}
+.input_box_small {
+  width: 100px;
+  display: inline-block;
+  padding: 5px;
+  margin-left: 20px;
+}
+.input_box_max {
+  width: 100%;
+  padding: 5px 10px 5px 5px;
+  margin: 5px;
+  display:block;
+}
+.size_box {
+  width: 398px;
+  margin: auto;
+  float: left;
+  padding: 5px;
+}
+.formHR {
+  width: 90%;
+  margin: auto;
+  border: 1px solid black;
+}
+.other_box {
+  display: block;
+  margin: 5px;
+  border: 1px dotted black;
+}
+
+.spdForm {
+  display:block;
+  clear: both;
+}
+
+.formsize {
+  width:100%;
+  float:left;
+  clear: both;
+  display:block
+}
+
+.feature {
+  width:90%;
+  padding: 5px;
+}
+ .form_radio {
+   margin: 5px;
+ }
