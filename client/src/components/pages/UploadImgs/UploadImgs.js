@@ -8,7 +8,7 @@ export class UploadImg extends Component {
         this.state = {
           file: []
         }
-        this._handleImageChange = this._handleImageChange.bind(this);
+        this._handleImageChange.bind(this);
         this._handleSubmit = this._handleSubmit.bind(this);
   }
 
@@ -25,13 +25,6 @@ export class UploadImg extends Component {
     formData.append('file', this.state.file);
     // console.log(this.state.file);
     API.uploadImg(formData)
-    // window.location = '/newproductform';
-    window.location = "/newproductform"
-  }
-
-  _nextPage =(e)=>{
-    e.preventDefault();
-    window.location = "/newproductform"
   }
 
   render(){
