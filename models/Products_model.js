@@ -1,8 +1,6 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-// var FileSchema = new Schema({}, { strict: false, collection: 'uploads.files' });
-
 //----database model-----
 var productSchema = new Schema({
     category_type : {type: String },

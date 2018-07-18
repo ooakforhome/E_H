@@ -17,13 +17,13 @@ mongoose.Promise = global.Promise;
 
 //----edit
 // Mongo URI
-const mongoURI = "mongodb://localhost/EHF";
+const mongoURI = "mongodb://localhost/dav";
 const conn = mongoose.createConnection(mongoURI);
 //----edit end
 
 mongoose.connect( process.env.MONGODB_URI || mongoURI)
 
-const routes = require("./controllers/ehfController");
+const routes = require("./controllers/controller");
 app.use(routes);
 
 
@@ -59,18 +59,6 @@ const multerConfig = {
   }
 };
 
-
-/* ROUTES
-**********/
-  app.get('/api/imgthis', function(req, res){
-    res.render('index.html');
-  });
-
-  app.post('/api/uploadthis', multer(multerConfig).single('photo'),function(req, res){
-      res.send('Complete!');
-  }
-);
-//-----multer end
 
 //----edit
 let gfs;
@@ -159,7 +147,6 @@ app.delete('/api/files', (req, res) => {
         }
       })
     });
-//----edit end
 
     app.get('/api/images/:metadata', (req, res) =>{
         console.log(req.params.metadata);
@@ -176,6 +163,8 @@ app.delete('/api/files', (req, res) => {
     }
   })
 });
+
+//----edit end
 
 //------------------------------------------------------------------------------
 // Start the API server

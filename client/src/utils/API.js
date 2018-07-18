@@ -1,9 +1,6 @@
 import axios from "axios";
 
 export default {
-  uploadthis: function(file){
-    return axios.post('/api/uploadthis', file)
-  },
   //server multer
   uploadImg: function(file){
     return axios.post('/api/uploads/', file);
@@ -18,13 +15,6 @@ export default {
   addUpload: function(photo) {
     return axios.post('/api/uploadImg/', photo);
   },
-  // getAllImgs: function(){
-  //   return axios.get('/api/uploadImg');
-  // },
-  // getUpload: function(filename) {
-  //   return axios.get('/api/image/'+ filename);
-  // },
-  // Gets all products
   getProducts: function() {
     return axios.get("/api/products");
   },
