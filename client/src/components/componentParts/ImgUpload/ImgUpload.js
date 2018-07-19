@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import API from "../../../utils/API";
 import "./style.css";
 
-export class ImgUpdate extends Component {
+export class ImgUpload extends Component {
   constructor (props){
     super(props)
         this.state = {
@@ -60,7 +60,7 @@ export class ImgUpdate extends Component {
            <button
              className="saveBtn inlineBlk"
              type="submit">
-                save
+                Upload
            </button>
         </form>
 

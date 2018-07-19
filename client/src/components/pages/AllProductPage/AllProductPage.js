@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { connect } from 'react-redux';
 import { fetchProducts } from '../../../actions/productsActions';
-import CategoriesNav from '../../componentParts/Nav/CategoriesNav';
 import {Prender} from '../../componentParts/PageList/Plist';
 import { Link } from 'react-router-dom';
 import "./allproduct.css";
@@ -36,9 +35,8 @@ class AllProductPage extends Component {
     )
     return(
       <div>
-        <CategoriesNav clickthenav = {this.handleClickthenav} />
         <h1>Products {this.props.match.params.category_type}</h1>
-        <Link to="/uploadimg">
+        <Link to="/newproductform">
           <button>Add Product</button>
         </Link>
         <Plist products = {this.props.posts}/>

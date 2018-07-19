@@ -3,7 +3,6 @@ import { connect } from 'react-redux';
 import { Link } from 'react-router-dom'
 import { fetchOne } from '../../../actions/productsActions';
 import { UpdateParts } from '../../componentParts/UpdateProdcutParts/UpdateParts';
-import { UploadImg } from '../UploadImgs/UploadImgs';
 import API from '../../../utils/API';
 import './detail.css'
 

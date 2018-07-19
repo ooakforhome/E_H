@@ -12,6 +12,9 @@ const PORT = process.env.PORT || 3001;
 
 app.use(bodyParser.json());
 app.use(express.static("client/public"));
+
+// MongoClient.connect(uri,{ useNewUrlParser: true });
+
 // Set up promises with mongoose
 mongoose.Promise = global.Promise;
 
