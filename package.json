@@ -1,7 +1,7 @@
 {
-  "name": "EHF-React",
+  "name": "Mongo",
   "version": "1.0.0",
-  "description": " EHF - Product System ",
+  "description": " Example - MongoDB Server ",
   "main": "server.js",
   "scripts": {
     "server": "node server.js",

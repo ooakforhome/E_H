@@ -1,7 +1,7 @@
 {
-  "name": "EHF-React",
+  "name": "React Example",
   "version": "1.0.0",
-  "description": " EHF - Product System ",
+  "description": " React Example for Products ",
   "main": "./client/src/index.js",
   "proxy": "http://localhost:3001/",
   "scripts": {
